@@ -1,0 +1,115 @@
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    /* background: #2c3e50; */
+  }
+
+.container{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.box{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    /* margin: 20px; */
+}
+
+.box_content{
+    font-size: 18px;
+    width: 40%;
+    padding: 30px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 10px solid #2c3e50;;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 5px;
+}
+.box_left{
+    width: 35%;
+    margin-left: 10px;
+}
+.box_left img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+
+}
+
+.navbar li{
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  
+}
+
+.navbar .animation{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+
+}
+
+  li:nth-child(1) {
+    width: 33%;
+  }
+  li:nth-child(2) {
+    width: 32%;
+  }
+  li:nth-child(3) {
+    width: 17%;
+  }
+  li:nth-child(4) {
+    width: 18%;
+  }
+  
+
+  .navbar .start-home .start-home, li:nth-child(1):hover~.animation {
+    width: 190px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+
+  .navbar .start-about, li:nth-child(2):hover~.animation {
+    width: 190px;
+    left: 190px;
+    background-color: #e74c3c;
+  }
+  .navbar .start-blog, li:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 380px;
+    background-color: #3498db;
+  }
+  .navbar .start-portefolio, li:nth-child(4):hover~.animation {
+    width: 110px;
+    left: 480px;
+    background-color: #9b59b6;
+  }
